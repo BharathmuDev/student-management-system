@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const registrationStartDate = new Date("2023-11-01");
     const registrationEndDate = new Date("2023-11-15");
-    const currentDate = new Date("2023-11-17");
+    const currentDate = new Date();
 
     if (currentDate >= registrationStartDate && currentDate <= registrationEndDate) {
         registerButton.addEventListener("click", function() {
@@ -17,5 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         registrationMessage.textContent = "Registration is currently closed.";
     }
 });
+
 
 
