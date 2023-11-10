@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment</title>
+    <link rel="stylesheet" href="dashBoard.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="teacherDashboard.html" class="menu-item">Home</a>
+        <a href="enrollment.html" class="menu-item active">Enrollment</a>
+        <a href="grades.html" class="menu-item">Set Grades</a>
+        <a href="schedule.html" class="menu-item">Schedule Classes</a>
+        <a href="reports.html" class="menu-item">Generate Reports</a>
+    </nav>
+
+    <main class="content">
+        <h1>Enrollment Page</h1>
+        <form id="enrollmentForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Enroll">
+        </form>
+    </main>
+</div>
+
+</body>
+</html>
