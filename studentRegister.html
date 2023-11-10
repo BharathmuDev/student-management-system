@@ -14,7 +14,7 @@
 
     <h1>Student Registration</h1>
 
-    <form id="userRegisterForm" method="post" action="/submit">
+    <form id="userRegisterForm" method="POST" id="inputform" action="/register">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
 
@@ -29,11 +29,18 @@
 
         <button type="submit" value="submit" id="registerButton">Register</button>
     </form>
+
+    
+
+    <p><a href="/studentLogin.html">Login here</a></p>
     <p id="registrationMessage"></p>
+    
+    
 </div>
 
-
+<div id="serverMessageBox" style="text-align: center;"></div>
 <script src="registrationForm.js"></script>
+
 </body>
 
 </html>
