@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Classes</title>
+    <link rel="stylesheet" href="dashBoard.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="teacherDashboard.html" class="menu-item">Home</a>
+        <a href="enrollment.html" class="menu-item">Enrollment</a>
+        <a href="grades.html" class="menu-item">Set Grades</a>
+        <a href="schedule.html" class="menu-item active">Schedule Classes</a>
+        <a href="reports.html" class="menu-item">Generate Reports</a>
+    </nav>
+
+    <main class="content">
+        <h1>Schedule Classes Page</h1>
+        <form id="scheduleForm">
+            <label for="className">Class Name:</label>
+            <input type="text" id="className" name="className" required>
+
+            <label for="classTime">Class Time:</label>
+            <input type="text" id="classTime" name="classTime" required>
+
+            <input type="submit" value="Schedule Class">
+        </form>
+
+        <div id="classSchedule">
+            <h2>Class Schedule</h2>
+            <div>
+                <p>Class Name: Mathematics</p>
+                <p>Class Time: Monday, 10:00 AM</p>
+            </div>
+            <div>
+                <p>Class Name: English</p>
+                <p>Class Time: Wednesday, 2:00 PM</p>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
