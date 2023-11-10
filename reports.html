@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Reports</title>
+    <link rel="stylesheet" href="dashBoard.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="teacherDashboard.html" class="menu-item">Home</a>
+        <a href="enrollment.html" class="menu-item">Enrollment</a>
+        <a href="grades.html" class="menu-item">Set Grades</a>
+        <a href="schedule.html" class="menu-item">Schedule Classes</a>
+        <a href="reports.html" class="menu-item active">Generate Reports</a>
+    </nav>
+
+    <main class="content">
+        <h1>Generate Reports Page</h1>
+
+        
+        <form id="reportsForm">
+            <label for="reportType">Report Type:</label>
+            <select id="reportType" name="reportType" required>
+                <option value="attendance">Attendance Report</option>
+                <option value="performance">Performance Report</option>
+              
+            </select>
+
+            <label for="dateRange">Date Range:</label>
+            <input type="text" id="dateRange" name="dateRange" placeholder="e.g., January 2023 - March 2023" required>
+
+            <input type="submit" value="Generate Report">
+        </form>
+
+        <div id="generatedReports">
+            <h2>Generated Reports</h2>
+            
+            <div>
+                <p>Report Type: Attendance Report</p>
+                <p>Date Range: January 2023 - March 2023</p>
+                <p><a href="#">Download Report</a></p>
+            </div>
+            <div>
+                <p>Report Type: Performance Report</p>
+                <p>Date Range: February 2023 - April 2023</p>
+                <p><a href="#">Download Report</a></p>
+            </div>
+            
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
