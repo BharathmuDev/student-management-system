@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Default text color */
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    padding-top: 20px;
+    color: white;
+    height: 100vh;
+}
+
+.menu-item {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: #34495e;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+#gradesDisplay, #classSchedule {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#gradesDisplay div, #classSchedule div {
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#gradesDisplay h2, #classSchedule h2 {
+    color: #3498db;
+    font-size: 20px;
+}
+
+.welcome-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-section, .recent-activities, .upcoming-events {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.activity-item, .event-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    margin-bottom: 10px;
+}
+
+.info-section a {
+    text-decoration: none;
+    color: #3498db;
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.info-section a:hover {
+    background-color: #2c3e50;
+    color: #fff;
+    transform: scale(1.05);
+}
+
