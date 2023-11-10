@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Grades</title>
+    <link rel="stylesheet" href="dashBoard.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="teacherDashboard.html" class="menu-item">Home</a>
+        <a href="enrollment.html" class="menu-item">Enrollment</a>
+        <a href="grades.html" class="menu-item active">Set Grades</a>
+        <a href="schedule.html" class="menu-item">Schedule Classes</a>
+        <a href="reports.html" class="menu-item">Generate Reports</a>
+    </nav>
+
+    <main class="content">
+        <h1>Set Grades Page</h1>
+        <form id="gradesForm">
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <input type="submit" value="Set Grade">
+        </form>
+
+        <div id="gradesDisplay">
+            <h2>Student Grades</h2>
+            <div>
+                <p>Student ID: 123</p>
+                <p>Grade: A</p>
+            </div>
+            <div>
+                <p>Student ID: 456</p>
+                <p>Grade: B</p>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
